@@ -24,30 +24,38 @@ limitations under the License.
 
 > Compute the [cosine][cosine] of a number on `[-π/4, π/4]`.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-special-kernel-cos
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var kernelCos = require( '@stdlib/math-base-special-kernel-cos' );
+kernelCos = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-cos@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var kernelCos = require( 'path/to/vendor/umd/math-base-special-kernel-cos/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-cos@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.kernelCos;
+})();
+</script>
 ```
 
 #### kernelCos( x, y )
@@ -99,10 +107,15 @@ v = kernelCos( NaN, 0.0 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var linspace = require( '@stdlib/array-base-linspace' );
-var PI = require( '@stdlib/constants-float64-pi' );
-var kernelCos = require( '@stdlib/math-base-special-kernel-cos' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-pi@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-cos@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var x = linspace( -PI/4.0, PI/4.0, 100 );
 
@@ -110,6 +123,11 @@ var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( 'kernelCos(%d) = %d', x[ i ], kernelCos( x[ i ], 0.0 ) );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -204,11 +222,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/cos]: https://github.com/stdlib-js/math-base-special-cos
+[@stdlib/math/base/special/cos]: https://github.com/stdlib-js/math-base-special-cos/tree/umd
 
-[@stdlib/math/base/special/kernel-sin]: https://github.com/stdlib-js/math-base-special-kernel-sin
+[@stdlib/math/base/special/kernel-sin]: https://github.com/stdlib-js/math-base-special-kernel-sin/tree/umd
 
-[@stdlib/math/base/special/kernel-tan]: https://github.com/stdlib-js/math-base-special-kernel-tan
+[@stdlib/math/base/special/kernel-tan]: https://github.com/stdlib-js/math-base-special-kernel-tan/tree/umd
 
 <!-- </related-links> -->
 
