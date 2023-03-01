@@ -38,12 +38,12 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/special/kernel-cos"
-click B href "https://github.com/stdlib-js/math-base-special-kernel-cos/tree/main"
-click C href "https://github.com/stdlib-js/math-base-special-kernel-cos/tree/production"
-click D href "https://github.com/stdlib-js/math-base-special-kernel-cos/tree/esm"
-click E href "https://github.com/stdlib-js/math-base-special-kernel-cos/tree/deno"
-click F href "https://github.com/stdlib-js/math-base-special-kernel-cos/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/special/kernel-cos"
+%% click B href "https://github.com/stdlib-js/math-base-special-kernel-cos/tree/main"
+%% click C href "https://github.com/stdlib-js/math-base-special-kernel-cos/tree/production"
+%% click D href "https://github.com/stdlib-js/math-base-special-kernel-cos/tree/esm"
+%% click E href "https://github.com/stdlib-js/math-base-special-kernel-cos/tree/deno"
+%% click F href "https://github.com/stdlib-js/math-base-special-kernel-cos/tree/umd"
 ```
 
 [stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/special/kernel-cos
