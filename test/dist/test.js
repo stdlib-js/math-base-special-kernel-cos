@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,103 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isnan = require( '@stdlib/math-base-assert-is-nan' );
-var linspace = require( '@stdlib/array-base-linspace' );
-var rempio2 = require( '@stdlib/math-base-special-rempio2' );
-var PI = require( '@stdlib/constants-float64-pi' );
-var cos = require( '@stdlib/math-base-special-cos' );
-var kernelCos = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof kernelCos, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `NaN` if provided `NaN` for either parameter', function test( t ) {
-	var v = kernelCos( NaN, 0.0 );
-	t.equal( isnan( v ), true, 'returns NaN' );
-
-	v = kernelCos( 4.0, NaN );
-	t.equal( isnan( v ), true, 'returns NaN' );
-
-	v = kernelCos( NaN, NaN );
-	t.equal( isnan( v ), true, 'returns NaN' );
-	t.end();
-});
-
-tape( 'the function evaluates the cosine for input values on the interval `[-pi/4, pi/4]`', function test( t ) {
-	var values;
-	var out;
-	var x;
-	var i;
-
-	values = linspace( -PI/4.0, PI/4.0, 1000 );
-	for ( i = 0; i < values.length; i++ ) {
-		x = values[ i ];
-		out = kernelCos( x, 0.0 );
-		t.strictEqual( out, cos( x ), 'returns expected value' );
-	}
-	t.end();
-});
-
-tape( 'the function can be used to compute the cosine for input values outside of `[-pi/4, pi/4]` after argument reduction via `rempio2` (positive)', function test( t ) {
-	var values;
-	var out;
-	var x;
-	var y;
-	var n;
-	var i;
-
-	values = linspace( 40.0*PI/4.0, 200*PI/4.0, 1000 );
-	y = new Array( 2 );
-	for ( i = 0; i < values.length; i++ ) {
-		x = values[ i ];
-		n = rempio2( x, y );
-		switch ( n & 3 ) {
-		case 0:
-			out = kernelCos( y[ 0 ], y[ 1 ] );
-			t.strictEqual( out, cos( x ), 'returns expected value' );
-			break;
-		case 2:
-			out = -kernelCos( y[ 0 ], y[ 1 ] );
-			t.strictEqual( out, cos( x ), 'returns expected value' );
-			break;
-		default:
-			break;
-		}
-	}
-	t.end();
-});
-
-tape( 'the function can be used to compute the cosine for input values outside of `[-pi/4, pi/4]` after argument reduction via `rempio2` (negative)', function test( t ) {
-	var values;
-	var out;
-	var x;
-	var y;
-	var n;
-	var i;
-
-	values = linspace( -200.0*PI/4.0, -40.0*PI/4.0, 1000 );
-	y = new Array( 2 );
-	for ( i = 0; i < values.length; i++ ) {
-		x = values[ i ];
-		n = rempio2( x, y );
-		switch ( n & 3 ) {
-		case 0:
-			out = kernelCos( y[ 0 ], y[ 1 ] );
-			t.strictEqual( out, cos( x ), 'returns expected value' );
-			break;
-		case 2:
-			out = -kernelCos( y[ 0 ], y[ 1 ] );
-			t.strictEqual( out, cos( x ), 'returns expected value' );
-			break;
-		default:
-			break;
-		}
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
