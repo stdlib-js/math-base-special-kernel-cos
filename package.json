@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math-base-special-kernel-cos",
   "version": "0.1.0",
-  "description": "Compute the cosine of a double-precision floating-point number on `[-π/4, π/4]`.",
+  "description": "Compute the cosine of a double-precision floating-point number on [-π/4, π/4].",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@stdlib/array-base-linspace": "^0.1.0",
-    "@stdlib/bench": "^0.1.0",
+    "@stdlib/bench": "^0.2.0",
     "@stdlib/constants-float64-pi": "^0.1.1",
     "@stdlib/fs-read-file": "^0.1.1",
     "@stdlib/fs-write-file": "^0.1.1",
