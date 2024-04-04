@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import kernelCos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-cos@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-kernel-cos/tags). For example,
+
+```javascript
 import kernelCos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-cos@v0.2.2-deno/mod.js';
 ```
 
@@ -99,7 +104,7 @@ v = kernelCos( NaN, 0.0 );
 ```javascript
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@deno/mod.js';
 import PI from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-pi@deno/mod.js';
-import kernelCos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-cos@v0.2.2-deno/mod.js';
+import kernelCos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-cos@deno/mod.js';
 
 var x = linspace( -PI/4.0, PI/4.0, 100 );
 
