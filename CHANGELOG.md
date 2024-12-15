@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-01)
+## Unreleased (2024-12-15)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`ff25e13`](https://github.com/stdlib-js/stdlib/commit/ff25e1324e1507cc076078e82badce7fdf7915f6) - **docs:** remove excess whitespace _(by Philipp Burckhardt)_
 -   [`4817867`](https://github.com/stdlib-js/stdlib/commit/4817867dcbddffe1ead3f532e01fce352bd77808) - **chore:** move stdlib benchmarks into native sub-directories _(by Philipp Burckhardt)_
 
 </details>
