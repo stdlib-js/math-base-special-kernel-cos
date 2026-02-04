@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import kernelCos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-cos@deno/mod.js';
+import kernelCos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-cos@v0.2.4-deno/mod.js';
 ```
 
 #### kernelCos( x, y )
@@ -100,7 +100,7 @@ v = kernelCos( NaN, 0.0 );
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
 import PI from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-pi@deno/mod.js';
-import kernelCos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-cos@deno/mod.js';
+import kernelCos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-cos@v0.2.4-deno/mod.js';
 
 var opts = {
     'dtype': 'float64'
