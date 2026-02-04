@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.2.4">
 
-## Unreleased (2025-08-11)
+## 0.2.4 (2026-02-04)
 
 <section class="commits">
 
@@ -13,7 +13,7 @@
 <details>
 
 -   [`6471b8e`](https://github.com/stdlib-js/stdlib/commit/6471b8e01fdce8657278f83e0921faef23e6622e) - **docs:** minor clean-up _(by Philipp Burckhardt)_
--   [`46cbdfe`](https://github.com/stdlib-js/stdlib/commit/46cbdfeff1b3f2dc38a442eafaf0cc25239fc518) - **docs:** replace manual `for` loop in examples [(#6639)](https://github.com/stdlib-js/stdlib/pull/6639) _(by Harsh)_
+-   [`46cbdfe`](https://github.com/stdlib-js/stdlib/commit/46cbdfeff1b3f2dc38a442eafaf0cc25239fc518) - **docs:** replace manual `for` loop in examples [(#6639)](https://github.com/stdlib-js/stdlib/pull/6639) _(by Harsh Yadav)_
 -   [`630ddb7`](https://github.com/stdlib-js/stdlib/commit/630ddb777824b5f6e501fda6dadf4ce41dccb964) - **test:** replace equal with strictEqual _(by Karan Anand)_
 -   [`a1e230f`](https://github.com/stdlib-js/stdlib/commit/a1e230f29297caa89880e9c194c615a0400fb7bc) - **chore:** clean up cppcheck-suppress comments _(by Karan Anand)_
 -   [`a12b502`](https://github.com/stdlib-js/stdlib/commit/a12b5024dd873533a9fb16a01cb2760349197a2f) - **test:** validate implementation against Julia test fixtures [(#5847)](https://github.com/stdlib-js/stdlib/pull/5847) _(by Karan Anand)_
@@ -32,7 +32,7 @@
 
 A total of 3 people contributed to this release. Thank you to the following contributors:
 
--   Harsh
+-   Harsh Yadav
 -   Karan Anand
 -   Philipp Burckhardt
 
