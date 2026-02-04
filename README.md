@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import kernelCos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-cos@esm/index.mjs';
+import kernelCos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-cos@v0.2.4-esm/index.mjs';
 ```
 
 #### kernelCos( x, y )
@@ -105,7 +105,7 @@ v = kernelCos( NaN, 0.0 );
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
 import PI from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-pi@esm/index.mjs';
-import kernelCos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-cos@esm/index.mjs';
+import kernelCos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kernel-cos@v0.2.4-esm/index.mjs';
 
 var opts = {
     'dtype': 'float64'
